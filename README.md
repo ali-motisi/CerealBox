@@ -22,3 +22,5 @@ Any questions please contact me at ali@motisi.com.
 If you are interested in this project also consider following me on twitter https://twitter.com/alimotisi
 
 @alimotisi
+
+For further information read my introductory blog post: http://www.motisi.net/?p=201507102
