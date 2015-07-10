@@ -1,3 +1,7 @@
+/*
+ * CerealBox - Copyright 2015 Ali Motisi. All rights reserved.
+*/
+
 #ifndef oocommon_h
 
 #include <stdint.h>

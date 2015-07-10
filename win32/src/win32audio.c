@@ -1,7 +1,11 @@
+/*
+ * CerealBox - Copyright 2015 Ali Motisi. All rights reserved.
+*/
+
 #include "win32audio.h"
 #include "../../common/src/oocommon.h"
 
-#include <math.h> // TODO remove
+#include <math.h>
 
 #define DIRECT_SOUND_CREATE(name) HRESULT WINAPI name(LPCGUID pcGuidDevice, LPDIRECTSOUND *ppDS, LPUNKNOWN pUnkOuter)
 typedef DIRECT_SOUND_CREATE(directSoundCreate_function);
@@ -14,8 +18,7 @@ typedef DIRECT_SOUND_CREATE(directSoundCreate_function);
  
 // 2 seconds
 #define OOWIN32_AUDIO_BUFFER_SIZE 176400
-//#define OOWIN32_FRAMES_OF_LATENCY 1470
-#define OOWIN32_FRAMES_OF_LATENCY 735
+#define OOWIN32_FRAMES_OF_LATENCY 1470 // note: reduce latency when building with optimisations on
 
 typedef struct {
 	LPDIRECTSOUNDBUFFER audioBuffer;
@@ -59,7 +62,6 @@ void win32ClearBuffer() {
 
 
 void win32AudioOutput(ooshort * data, oouint numOfFrames) {
-	// TODO
 	DWORD uPlayCursor = 0;
 	DWORD uWriteCursor = 0;
 	oouint latencyBytes = OOWIN32_FRAMES_OF_LATENCY*2*2; // two channels, two bytes per sample

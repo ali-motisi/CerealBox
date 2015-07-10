@@ -1,3 +1,7 @@
+/*
+ * CerealBox - Copyright 2015 Ali Motisi. All rights reserved.
+*/
+
 #include <windows.h>
 #include "../../common/src/oogame.h"
 #include "win32audio.h"
@@ -97,7 +101,6 @@ void destroyGraphics(oowindata* data) {
 
 void initGraphics(oowindata* data) {
 #ifdef OO_DIRECTXBLIT
-	// TODO
 	data->d3d = Direct3DCreate9(D3D_SDK_VERSION);
 	if( !data->d3d ) {
 		return;

@@ -1,7 +1,11 @@
+/*
+ * CerealBox - Copyright 2015 Ali Motisi. All rights reserved.
+*/
+
 #include "../../../common/src/oogame.h"
 
 #include <string.h>
-#include <math.h> // TODO remove
+#include <math.h>
 
 
 typedef struct {
@@ -21,17 +25,17 @@ typedef struct {
 	ooplayer p2;
 
 	oofloat moveDelta;
-} ootestgame;
+} cbgame;
 
 
-void initGame(ootestgame * game) {
+void initGame(cbgame* game) {
 	game->initialised = ootrue;
 	game->p2.x = 200.f;
 }
 
 
 
-void outputSine(ootestgame* game) {
+void outputSine(cbgame* game) {
 	ooshort toneVolume = 4000;
 	//oofloat freq = 440 + (game->p1.x-game->p1.y) * 5;
 	oofloat freq = 440.f;
@@ -55,11 +59,11 @@ void outputSine(ootestgame* game) {
 
 }
 
-void clearScreen(ootestgame* game) {
+void clearScreen(cbgame* game) {
 	memset(game->output->graphic.buffer, 0, game->output->graphic.width*game->output->graphic.height*sizeof(oouint));
 }
 
-void drawRectangle(ootestgame* game, ooint x, ooint y, oouint width, oouint height, oouint colour) {
+void drawRectangle(cbgame* game, ooint x, ooint y, oouint width, oouint height, oouint colour) {
 	// this is a very simple implementation
 	// and needs optimisation
 	// also alpha blending is missing
@@ -78,13 +82,13 @@ void drawRectangle(ootestgame* game, ooint x, ooint y, oouint width, oouint heig
 }
 
 
-void drawPlayer(ootestgame* game, ooplayer* player) {
+void drawPlayer(cbgame* game, ooplayer* player) {
 	ooint playerSize = 50;
 	oouint colour = &game->p1==player ? 0xff00ffff : 0xff00ff00;
 	drawRectangle(game, (ooint) player->x, (ooint)player->y, playerSize, playerSize, colour);
 }
 
-void updateGame(ootestgame * game) {
+void updateGame(cbgame * game) {
 
 	oofloat playerSpeed = game->input->dt * 300.f;
 	
@@ -121,12 +125,12 @@ void updateGame(ootestgame * game) {
 
 
 oouint64 gameMemorySize() {
-	return sizeof(ootestgame); // TODO rename
+	return sizeof(cbgame);
 }
 
 
 void advanceGame(void* gameMemory, OOGameInput* input, OOGameOutput* output) {
-	ootestgame * game = (ootestgame*) gameMemory;
+	cbgame * game = (cbgame*) gameMemory;
 
 	game->input = input;
 	game->output = output;

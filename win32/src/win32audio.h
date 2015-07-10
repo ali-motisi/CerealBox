@@ -1,3 +1,7 @@
+/*
+ * CerealBox - Copyright 2015 Ali Motisi. All rights reserved.
+*/
+
 #ifndef win32audio_h
 
 #include <windows.h>

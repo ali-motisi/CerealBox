@@ -1,3 +1,7 @@
+/*
+ * CerealBox - Copyright 2015 Ali Motisi. All rights reserved.
+*/
+
 #ifndef oogame_h
 
 #include "oocommon.h"
