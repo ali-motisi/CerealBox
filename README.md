@@ -6,6 +6,7 @@ It's designed to provide C programmers with the bare minimum of what's needed to
 Simply provide an implementation for the following functions and you are good to go:
 
 oouint64 gameMemorySize();
+
 void advanceGame(void * gameMemory, OOGameInput * input, OOGameOutput * output);
 
 The advanceGame function provides and input (mouse, keyboard and delta time since the last update)
@@ -16,7 +17,7 @@ There is also a reference implementation in CerealBox\games\samplegame.
 
 Start from there and have fun!
 
-Any question please contact me at ali@motisi.com.
+Any questions please contact me at ali@motisi.com.
 
 If you are interested in this project also consider following me on twitter https://twitter.com/alimotisi
 
