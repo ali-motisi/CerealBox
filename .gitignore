@@ -42,3 +42,14 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.sdf
+win32/vsproject/Debug/cbsamplegame.obj
+win32/vsproject/Debug/CerealBox.exe
+win32/vsproject/Debug/CerealBox.log
+*.ilk
+win32/vsproject/Debug/CerealBox.pdb
+win32/vsproject/Debug/CerealBox.tlog/CerealBox.lastbuildstate
+win32/vsproject/Debug/CerealBox.tlog/cl.command.1.tlog
+*.tlog
+win32/vsproject/Debug/vc120.idb
+*.obj
+win32/vsproject/Debug/vc120.pdb
