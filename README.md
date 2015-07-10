@@ -9,7 +9,7 @@ oouint64 gameMemorySize();
 
 void advanceGame(void * gameMemory, OOGameInput * input, OOGameOutput * output);
 
-The advanceGame function provides and input (mouse, keyboard and delta time since the last update)
+The advanceGame function provides an input (mouse, keyboard and delta time since the last update)
 and output (a graphic buffer and an audio buffer).
 
 You can open the project in Visual Studio 2013, from the CerealBox\win32\vsproject directory.
