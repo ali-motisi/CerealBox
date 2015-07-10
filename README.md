@@ -13,6 +13,8 @@ There is also a reference implementation in CerealBox\games\samplegame.
 
 Start from there and have fun!
 
-Any question please contact me at ali@motisi.com or on twitter: @alimotisi.
+Any question please contact me at ali@motisi.com.
 
-https://twitter.com/alimotisi
+If you are interested in this project consider following me on twitter https://twitter.com/alimotisi
+
+@alimotisi
