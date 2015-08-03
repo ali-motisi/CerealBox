@@ -234,11 +234,11 @@ void win32GetScreenResolution(ooint * width, ooint * height) {
 
 
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR lpszCmdLine, int nCmdShow) {
-	wchar_t progname[] = L"OOJam";
+	wchar_t progname[] = L"CerealBox";
 
 
-	windata.gameoutput.graphic.width = 1920/4;
-	windata.gameoutput.graphic.height = 1080/4;
+	windata.gameoutput.graphic.width = 1920/2;
+	windata.gameoutput.graphic.height = 1080/2;
 
 	windata.running = ootrue;
 	windata.gameMemory = (void *) calloc((size_t)gameMemorySize(), 1L);
